@@ -1,0 +1,31 @@
+@mixin header-link {
+    a {
+        box-shadow: 0px 0px 5px $orange;
+        padding: 5px;
+        border-radius: 3px;
+        &:hover{
+          box-shadow: 0px 0px 9px $orange;
+        }
+      }
+  }
+  $tablet-width: 768px;
+  $desktop-width: 1024px;
+  
+  @mixin mobile {
+    @media  (max-width: #{$tablet-width - 1px}) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media (min-width: #{$tablet-width }) {
+      @content;
+    }
+  }
+  @mixin adminButton {
+    color: $white !important;
+    padding: 7px 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 14px;
+  }

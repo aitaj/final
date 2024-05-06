@@ -1,0 +1,33 @@
+.redirect {
+  font-size: 15px;
+  color: $white !important;
+  background-color: $orange;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 3px;
+}
+.enter {
+  padding: 5px;
+  color: $white !important;
+  background-color: $green !important;
+}
+.reject {
+  background-color: $red !important;
+  padding: 5px;
+  color: $white !important;
+}
+.signin{
+  input {
+    border: 1px solid $orange !important;
+    font-size: 14px !important;
+  }
+}
+#admin-signin{
+  background: #f6f7fc;
+.photo-admin{
+  height:700px;
+  background-image:url("../../assets/images/bg_1.jpg") ;
+  background-position: center;
+}
+
+}

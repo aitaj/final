@@ -1,0 +1,304 @@
+//product card
+
+.product-card {
+  border: 1px solid rgb(230, 227, 227);
+  transition: all 0.3s;
+  position: relative;
+  &:hover {
+    box-shadow: 1px 2px 20px 5px #dfdada;
+  }
+  @include mobile {
+    margin: 5px 0px;
+  }
+}
+.custom-card-header {
+  height: 300px;
+  @include mobile {
+    height: 200px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.custom-card-body {
+  h5 {
+    margin-bottom: 2px !important;
+    font-size: 16px;
+  }
+  padding: 15px;
+  p {
+    margin-bottom: 2px !important;
+    font-size: 14px;
+  }
+}
+.heading {
+  margin: 30px 15px;
+  display: flex;
+  align-items: center;
+  span {
+    font-size: 18px;
+    font-weight: 500;
+    @include mobile {
+      font-size: 15px !important;
+    }
+  }
+}
+.discount {
+  animation-name: discount;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  font-weight: 500;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 3px;
+  border: 1px solid;
+  background-color: rgb(255, 122, 122);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  @include mobile {
+    padding: 7px;
+  }
+  p {
+    margin: 0 !important;
+    font-weight: 600;
+    font-size: 25px;
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+}
+.price-ex {
+  text-decoration: line-through;
+}
+.price {
+  border: 2px solid $orange;
+  margin-bottom: 3px;
+  border-radius: 3px;
+  animation-name: price;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  .current-price {
+    font-weight: 600;
+    color: $red;
+  }
+}
+.discount-date {
+  background-color: $white;
+  animation-name: discount-date;
+  animation-iteration-count: infinite;
+  color: rgb(83, 147, 83);
+  animation-duration: 2s;
+  border-radius: 3px;
+  border: 2px solid;
+  font-weight: 500;
+  span {
+    font-size: 15px !important;
+  }
+  @include mobile {
+    padding: 0px;
+    font-size: 10px;
+  }
+}
+.product-info {
+  @include mobile {
+    text-align: center;
+    padding: 20px;
+  }
+  .ex-price {
+    text-decoration: line-through;
+  }
+  .price-info {
+    .current-price {
+      background-color: $green;
+      color: $white;
+      padding: 5px;
+      border-radius: 4px;
+    }
+  }
+  .buttons-basket-back{
+    justify-content: center;
+  }
+  .amount {
+    @include mobile{
+      justify-content: center;
+    }
+    a {
+      padding: 4px 6px;
+      @include mobile {
+        padding: 2px 4px;
+        i {
+          font-size: 13px;
+        }
+      }
+      color: $white !important;
+      background-color: $orange;
+      border-radius: 3px;
+    }
+    @include mobile {
+      h3 {
+        font-size: 18px;
+        margin: 2px;
+      }
+    }
+    h5 {
+      width: 20px;
+    }
+  }
+  .add-basket {
+    padding: 5px;
+    color: $white !important;
+    background-color: $green !important;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px $green;
+    &:hover {
+      box-shadow: 1px 1px 9px $green;
+    }
+  }
+  .go-back {
+    background-color: $red !important;
+    padding: 5px;
+    color: $white !important;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px $red;
+    &:hover {
+      box-shadow: 1px 1px 9px $red;
+    }
+  }
+}
+#content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  width: 600px;
+  padding: 10px;
+  @include mobile {
+    max-width: 370px;
+  }
+}
+
+#featured {
+  max-width: 500px;
+  max-height: 600px;
+
+  cursor: pointer;
+}
+
+.thumbnail {
+  object-fit: cover;
+  max-width: 180px;
+  max-height: 100px;
+  cursor: pointer;
+  opacity: 0.5;
+  margin: 5px;
+}
+
+.thumbnail:hover {
+  opacity: 1;
+}
+
+.active {
+  opacity: 1;
+}
+
+#slide-wrapper {
+  margin-top: 30px;
+  max-width: 500px;
+  display: flex;
+  min-height: 100px;
+  align-items: center;
+}
+
+#slider {
+  width: 440px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+#slider::-webkit-scrollbar {
+  width: 8px;
+}
+
+#slider::-webkit-scrollbar-thumb {
+  background-color: $orange;
+  outline: none;
+  border-radius: 100px;
+}
+
+#slider::-webkit-scrollbar-thumb:hover {
+  background-color: orange;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  opacity: 0.5;
+  width: 35px;
+  height: 35px;
+}
+
+#img-container {
+  z-index: 1;
+  max-width: 500px;
+  position: relative;
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    @include mobile{
+      height: 200px;
+    }
+  }
+}
+
+#lens {
+  z-index: 2;
+  position: absolute;
+
+  height: 150px;
+  width: 150px;
+  border: 1px solid $orange;
+  background-repeat: no-repeat;
+  cursor: none;
+}
+
+@keyframes discount {
+  0% {
+    border-color: rgb(245, 179, 174);
+    color: rgb(245, 179, 174);
+  }
+  100% {
+    border-color: $red;
+    color: $red;
+  }
+}
+@keyframes discount-date {
+  0% {
+    border-color: rgb(194, 240, 190);
+  }
+  100% {
+    border-color: $green;
+  }
+}
+@keyframes price {
+  0% {
+    border-color: rgb(252, 236, 192);
+  }
+  100% {
+    border-color: $orange;
+  }
+}

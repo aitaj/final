@@ -1,0 +1,38 @@
+.size-page {
+  .product {
+    flex: 4;
+    padding: 20px;
+  }
+  .productAddButton {
+    background-color: $green !important;
+    @include adminButton;
+  }
+
+  .btns-wrapper {
+    a {
+      @include adminButton;
+    }
+    .edit {
+      background-color: $orange;
+    }
+    .delete {
+      background-color: $red;
+    }
+    .details {
+      background-color: $gray;
+    }
+  }
+
+}
+.modal-footer{
+  button{
+    @include adminButton;
+
+  }
+  .btn-add{
+    background-color: $green !important;
+  }
+  .btn-close{
+    background-color: $gray !important;
+  }
+}

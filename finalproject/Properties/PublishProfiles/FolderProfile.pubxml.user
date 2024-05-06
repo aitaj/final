@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Lenovo Legion\source\repos\FinalProjectP511\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
+    <History>True|2021-09-08T20:56:59.9032589Z;True|2021-09-08T17:18:23.0553797+04:00;True|2021-09-06T20:44:48.4723722+04:00;True|2021-09-06T02:24:01.4618963+04:00;True|2021-09-05T00:11:11.4310571+04:00;True|2021-09-05T00:02:14.2588643+04:00;True|2021-09-04T23:44:22.8449706+04:00;True|2021-09-03T13:51:36.8245043+04:00;True|2021-08-24T01:32:49.2807418+04:00;True|2021-08-22T16:25:54.2496901+04:00;</History>
+  </PropertyGroup>
+</Project>
